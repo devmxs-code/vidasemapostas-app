@@ -15,31 +15,135 @@ const motivationalTips = [
   "Busque atividades que tragam prazer real: exercícios, hobbies, tempo com amigos.",
   "Cada 'não' para o jogo é um 'sim' para sua saúde mental e financeira.",
   "Você não está sozinho nesta luta. Milhões de pessoas conseguiram parar de jogar.",
-  "Invista em você mesmo ao invés de investir em jogos que são programados para te fazer perder."
+  "Invista em você mesmo ao invés de investir em jogos que são programados para te fazer perder.",
+  "Sua força de vontade é como um músculo - quanto mais você exercita, mais forte fica.",
+  "As emoções que você busca no jogo podem ser encontradas em conquistas reais.",
+  "Hoje você está escrevando uma nova história - uma onde você tem o controle.",
+  "Recaídas fazem parte do processo, mas não definem seu caminho. Levante-se e continue!",
+  "A cada hora sem apostar, seu cérebro se reconecta para uma vida mais saudável.",
+  "Você já provou que é forte o suficiente para reconhecer o problema - agora vai vencer!",
+  "Imagine como será bom olhar para trás e ver como você superou esta dificuldade.",
+  "O vício mente para você. A recuperação fala a verdade: você é capaz!",
+  "Substitua o desejo de apostar por metas concretas - seu futuro eu agradecerá.",
+  "Comemore as pequenas vitórias - 1 dia, 1 semana, 1 mês limpo são conquistas reais.",
+  "A ansiedade passa. O arrependimento por ter jogado dura muito mais.",
+  "Você está aprendendo a lidar com suas emoções sem máscaras ou escapes falsos.",
+  "Seu valor não está no que você pode ganhar, mas no que você já conquistou.",
+  "A melhor aposta que você pode fazer é em você mesmo - e essa sempre terá retorno.",
+  "Quando a tentação chegar, lembre-se: você já resistiu antes e pode resistir de novo."
 ];
 
 // Histórias fictícias baseadas em situações reais
 const realStories = [
   {
     id: 1,
-    title: "A História de Carlos - Do Vício à Recuperação",
-    content: "Carlos, de 28 anos, começou jogando 'só R$ 10' no jogo do tigrinho. Em 6 meses, havia perdido R$ 15.000 e mentido para a família. Hoje, após buscar ajuda nos Jogadores Anônimos, está há 8 meses sem apostar e reconstruindo sua vida financeira.",
-    image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80"
+    title: "Carlos - A Espiral Descendente do Jogo do Tigrinho",
+    content: "Carlos, um senhor de 52 anos, começou com apostas 'inocentes' de R$10 no jogo do tigrinho. Em apenas 6 meses, seu vício consumiu R$15.000 - todo seu fundo de emergência e parte do salário. Ele mentia para a esposa sobre horas extras no trabalho enquanto na verdade estava em casas de apostas. Quando seu filho precisou de remédios e não havia dinheiro, ele acordou para a realidade. Hoje, após 8 meses nos Jogadores Anônimos e terapia, Carlos reconstruiu sua vida financeira e familiar. 'Aprendi que cada real perdido no jogo era um pedaço da minha dignidade que eu entregava'.",
+    image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" // Homem jovem sério
   },
   {
     id: 2,
-    title: "Maria e os Empréstimos Perigosos",
-    content: "Maria, mãe de dois filhos, acreditou que conseguiria 'recuperar as perdas' apostando mais. Chegou a pegar empréstimos com juros altos. Quando procurou ajuda no CAPS, já devia R$ 8.000. Com tratamento psicológico gratuito, aprendeu a controlar os impulsos.",
-    image: "https://images.unsplash.com/photo-1554151228-14d9def656e4?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80"
+    title: "Maria - O Custo dos Empréstimos para Apostar",
+    content: "Maria, 35 anos e mãe de dois filhos, caiu na armadilha de tentar 'recuperar perdas'. Começou pegando R$500 emprestado, mas em 3 meses devia R$8.000 com juros de 15% ao mês. Chegou a esconder contas de luz atrasadas dos filhos. No CAPS, descobriu que seu vício mascarava uma depressão pós-parto não tratada. Com terapia cognitiva e acompanhamento financeiro do CRAS, está há 1 ano sem apostas e ensinando seus filhos sobre educação financeira. 'O pior não foi o dinheiro perdido, mas o tempo roubado da minha família'.",
+    image: "https://images.unsplash.com/photo-1554151228-14d9def656e4?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" // Mulher adulta preocupada
   },
   {
     id: 3,
-    title: "João e o Isolamento Social",
-    content: "João passou a evitar amigos e família por vergonha das perdas no jogo. Perdeu o emprego por faltar devido à ansiedade. O CVV o ajudou nos momentos mais difíceis, e hoje ele participa de grupos de apoio, onde encontrou pessoas que passaram pelo mesmo.",
-    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80"
+    title: "João - Quando o Isolamento Vira Prisão",
+    content: "João, 42 anos, começou a faltar no trabalho após noites em claro apostando. Perdeu o emprego de 15 anos e se isolou por vergonha. Seus pais idosos ficaram sem ajuda médica porque ele gastou a reserva familiar. No CVV, encontrou apoio para superar pensamentos suicidas. Hoje, como voluntário em grupos de apoio, ajuda outros a quebrar o ciclo: 'O vício te convence que você está sozinho, mas a saída está justamente em pedir ajuda'.",
+    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    id: 4,
+    title: "Ana - O Preço do Alívio Fictício",
+    content: "Como gerente bancária, Ana ganhava R$15 mil/mês mas acumulava estresse. Os cassinos online viraram sua 'válvula de escape'. Em 1 ano, perdeu R$120 mil - incluindo a reserva para comprar seu apartamento. Demitida por usar o celular para apostas durante o trabalho, descobriu no tratamento que usava o jogo para lidar com ansiedade. Hoje, como consultora financeira, alerta: 'Nenhum alívio momentâneo vale sua estabilidade emocional'.",
+    image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    id: 5,
+    title: "Fernanda - O Noivado Perdido nos Slots",
+    content: "Fernanda começou jogando caça-níqueis em festas. Em 8 meses, gastava R$5.000/mês em salões de jogos. Cancelou a festa de noivado para pagar dívidas. Seu parceiro só descobriu quando cartões em seu nome apareceram. Na terapia, entendeu que usava o jogo para preencher um vazio existencial. Hoje, 3 anos sóbria, trabalha com artesanato: 'Recuperei minha criatividade que o vício havia roubado'.",
+    image: "https://images.unsplash.com/photo-1544005313-a576cf803bda?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    id: 6,
+    title: "Marcos - O Drible que Não Saiu",
+    content: "Jogador profissional, Marcos começou a apostar em seus próprios jogos. Manipulou resultados para pagar dívidas, foi banido e processado. Na terapia, descobriu que o vício começou quando usava apostas para lidar com a pressão. Hoje, treina jovens atletas: 'Ensino que habilidade sem caráter é gol contra na vida'.",
+    image: "https://images.unsplash.com/photo-1541532713592-79a0317b6b77?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    id: 7,
+    title: "Juliana - Herança em Fumaça",
+    content: "Juliana recebeu R$50 mil de herança. Em 3 meses, perdeu tudo em roletas online. Tentou suicídio ao receber ameaças de agiotas. Internada via SUS, foi diagnosticada com transtorno bipolar. Com medicação e terapia, está há 2 anos sóbria: 'Minha maior vitória foi perceber que precisava viver, não ganhar'.",
+    image: "https://images.unsplash.com/photo-1551836022-d5d88e9218df?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    id: 8,
+    title: "Pedro - O Círculo Vicioso das Apostas",
+    content: "Vendedor, Pedro começou a usar o dinheiro das vendas para apostar, prometendo repor depois. Em 1 ano, faltavam R$45 mil no caixa. Descoberto, quase foi preso por apropriação indébita. No tratamento, diagnosticaram TDAH não tratado. Hoje, com medicamentos e terapia, mantém um emprego estável: 'Aprendi que vício não é falha de caráter, mas doença tratável'.",
+    image: "https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    id: 9,
+    title: "Camila - O Sonho da Casa Própria Perdido",
+    content: "Camila juntava R$1.500/mês para comprar um imóvel. O 'tigrinho' consumiu R$300 mil em 2 anos - incluindo empréstimos consignados. Com nome sujo, foi despejada. Através do programa 'Famílias Fortes', renegociou dívidas e hoje, 1 ano sóbria, aluga um quarto: 'Reconstruir é lento, mas cada dia limpo é uma vitória'.",
+    image: "https://images.unsplash.com/photo-1554080353-a576cf803bda?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    id: 10,
+    title: "Lucas - A Ilusão do Controle Matemático",
+    content: "Formado em estatística, Lucas acreditava que venceria as probabilidades. Desenvolveu um 'sistema infalível' que o levou a perder R$80 mil. No grupo de apoio, entendeu que os jogos são projetados para enganar até especialistas. Hoje ensina matemática financeira: 'Probabilidade real mostra que a banca sempre leva vantagem'.",
+    image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    id: 11,
+    title: "Patrícia - Quando o Vício Ameaça a Família",
+    content: "Patrícia perdeu a guarda temporária dos filhos por negligência. Gastava o vale-alimentação em raspadinhas e deixava as crianças com fome. No CRAS, recebeu apoio psicológico e social. Após 1 ano de tratamento, reunificou a família: 'Meus filhos me deram a força que as apostas prometiam, mas nunca entregaram'.",
+    image: "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    id: 12,
+    title: "Tatiane - Influenciando para o Perigo",
+    content: "Tatiane ganhava R$15 mil/mês promovendo casas de apostas. Quando começou a jogar, perdeu R$40 mil e seu canal. Hoje, usa sua experiência para alertar sobre marketing predatório: 'Eles vendem diversão, mas cobram com vidas destruídas'.",
+    image: "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    id: 13,
+    title: "Diego - Day Trade: O Cassino Digital",
+    content: "Diego confundiu investimento com aposta. Operando alavancado, perdeu R$150 mil em semanas. Na terapia, entendeu seu vício em adrenalina. Hoje, como planejador financeiro, alerta: 'Mercado não é roleta - quando parece fácil, é porque você não entende os riscos'.",
+    image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    id: 14,
+    title: "Amanda - O FIES que Virou Fardo",
+    content: "Amanda usou R$18 mil do FIES em apostas esportivas. Quando a faculdade descobriu, deu 48h para regularizar. Sua mãe vendeu joias para salvá-la. Como voluntária, hoje alerta: 'Dívida de jogo é a mais cara - cobram com sua autoestima'.",
+    image: "https://images.unsplash.com/photo-1544725176-7c40e5a71c5e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    id: 15,
+    title: "Gustavo - Quando o Desespero Vira Crime",
+    content: "Gustavo roubou joias da família para apostar. Internado compulsoriamente, descobriu depressão severa. Após 1 ano de tratamento, reconcilia-se com os pais: 'O vício não justifica meus atos, mas a recuperação me deu chance de repará-los'.",
+    image: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    id: 16,
+    title: "Renata - Executiva em Queda Livre",
+    content: "Diretora financeira, Renata perdeu R$500 mil em cassinos VIP. Seu marido quase a deixou quando descobriu o segundo empréstimo oculto. Com coaching executivo, voltou ao mercado como consultora: 'Sucesso real não depende de sorte, mas de consistência'.",
+    image: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    id: 17,
+    title: "André - De Viciado a Terapeuta",
+    content: "André perdeu 10 anos para o vício, incluindo seu casamento. Na recuperação, formou-se em psicologia. Hoje, no CAPS, usa sua experiência: 'Ninguém entende um viciado como quem esteve lá. Minhas cicatrizes são minhas credenciais'.",
+    image: "https://images.unsplash.com/photo-1542190891-2093d38760f2?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    id: 18,
+    title: "Carla - Três Tentativas e Uma Nova Chance",
+    content: "Carla tentou suicídio 3 vezes antes de aceitar ajuda. Internada por 6 meses, descobriu transtorno borderline. Seu blog 'Vida Sem Apostas' já ajudou centenas: 'Minhas cicatrizes agora servem para mostrar que até o fundo do poço tem saída'.",
+    image: "https://images.unsplash.com/photo-1542103749-8ef59b94f47e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
   }
 ];
-
 // Dados de estatísticas
 const gamblingStats = [
   { id: 1, title: "Perda média mensal", value: "R$ 2.000-10.000", icon: <DollarSign /> },

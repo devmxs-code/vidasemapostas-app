@@ -235,6 +235,9 @@ const GamblingAwarenessApp = () => {
         <div className="mt-8 text-center text-sm text-gray-400">
           <p>© {new Date().getFullYear()} Vida Sem Apostas - Todos os direitos reservados</p>
           <p className="mt-2">Este é um projeto sem fins lucrativos para conscientização sobre os riscos do vício em jogos de azar</p>
+           <p className="text-gray-600 text-sm mt-2 text-center w-full">
+            Desenvolvido por <a href="https://devmxs.com.br" className="hover:text-blue-700 font-semibold transition">DEVMXS</a>
+          </p>
         </div>
       </div>
     </footer>

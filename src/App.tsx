@@ -2,8 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { 
   Heart, Shield, Users, BookOpen, Phone, AlertTriangle, Home, 
   Info, HelpCircle, MessageCircle, Calendar, BarChart2, 
-  DollarSign, Lock, Smile, Frown, TrendingUp, TrendingDown,
-  Clock, ChevronLeft, ChevronRight, X, Check, Plus, Minus
+  DollarSign, Lock, Frown, TrendingUp, TrendingDown,
+  ChevronLeft, ChevronRight, X, Check, Plus, Minus
 } from 'lucide-react';
 
 // Dados das dicas rotativas
@@ -289,7 +289,9 @@ const GamblingAwarenessApp = () => {
           </nav>
 
           <div className="md:hidden">
+            <label htmlFor="page-select" className="sr-only">Selecione uma página</label>
             <select 
+              id="page-select"
               value={currentPage} 
               onChange={(e) => setCurrentPage(e.target.value)}
               className="bg-blue-700 text-white px-3 py-2 rounded-lg shadow-md"
@@ -353,7 +355,12 @@ const GamblingAwarenessApp = () => {
         <div className="p-6">
           <div className="flex justify-between items-center mb-4">
             <h3 className="text-xl font-bold text-gray-800">{modalContent?.title}</h3>
-            <button onClick={closeModal} className="text-gray-500 hover:text-gray-700">
+            <button 
+              type="button" 
+              onClick={closeModal} 
+              className="text-gray-500 hover:text-gray-700" 
+              aria-label="Close modal"
+            >
               <X className="w-6 h-6" />
             </button>
           </div>
@@ -503,6 +510,7 @@ const GamblingAwarenessApp = () => {
                 key={index} 
                 onClick={() => setCurrentTip(index)}
                 className={`w-3 h-3 rounded-full transition-colors ${index === currentTip ? 'bg-white' : 'bg-white/50 hover:bg-white/70'}`}
+                aria-label='Mudar dica motivacional'
               />
             ))}
           </div>
@@ -789,6 +797,7 @@ const GamblingAwarenessApp = () => {
                 key={index} 
                 onClick={() => setCurrentTip(index)}
                 className={`w-3 h-3 rounded-full transition-colors ${index === currentTip ? 'bg-white' : 'bg-white/50 hover:bg-white/70'}`}
+                aria-label='Mudar dica motivacional'
               />
             ))}
           </div>
@@ -971,12 +980,14 @@ const GamblingAwarenessApp = () => {
         <button 
           onClick={() => setActiveStory(prev => (prev > 0 ? prev - 1 : realStories.length - 1))}
           className="absolute left-0 top-1/2 -translate-y-1/2 bg-white shadow-md rounded-full p-2 z-10 ml-2"
+          aria-label='História Anterior'
         >
           <ChevronLeft className="w-6 h-6 text-gray-600" />
         </button>
         <button 
           onClick={() => setActiveStory(prev => (prev < realStories.length - 1 ? prev + 1 : 0))}
           className="absolute right-0 top-1/2 -translate-y-1/2 bg-white shadow-md rounded-full p-2 z-10 mr-2"
+          aria-label='Próxima História'
         >
           <ChevronRight className="w-6 h-6 text-gray-600" />
         </button>
@@ -987,6 +998,7 @@ const GamblingAwarenessApp = () => {
               key={index}
               onClick={() => setActiveStory(index)}
               className={`w-3 h-3 rounded-full transition-colors ${index === activeStory ? 'bg-blue-600' : 'bg-gray-300 hover:bg-gray-400'}`}
+              aria-label='Mudar História'
             />
           ))}
         </div>
@@ -1047,6 +1059,7 @@ const GamblingAwarenessApp = () => {
             <button 
               onClick={decrementDays}
               className="bg-gray-200 hover:bg-gray-300 text-gray-800 rounded-full w-10 h-10 flex items-center justify-center transition-colors"
+              aria-label='Diminuir dias limpos'
             >
               <Minus className="w-5 h-5" />
             </button>
@@ -1057,6 +1070,7 @@ const GamblingAwarenessApp = () => {
             <button 
               onClick={incrementDays}
               className="bg-gray-200 hover:bg-gray-300 text-gray-800 rounded-full w-10 h-10 flex items-center justify-center transition-colors"
+              aria-label='Aumentar dias limpos'
             >
               <Plus className="w-5 h-5" />
             </button>
@@ -1096,26 +1110,32 @@ const GamblingAwarenessApp = () => {
               <div className="mb-4">
                 <label className="block text-gray-700 mb-2">Valor médio que gastava por dia:</label>
                 <div className="flex items-center">
+                  <label htmlFor="dailyAmount" className="sr-only">Valor médio diário</label>
                   <span className="mr-2">R$</span>
                   <input 
+                    id="dailyAmount"
                     type="number" 
                     value={dailyAmount}
                     onChange={(e) => setDailyAmount(Number(e.target.value))}
                     className="border border-gray-300 rounded px-3 py-2 w-full"
                     min="0"
                     step="5"
+                    placeholder="Digite o valor"
                   />
                 </div>
               </div>
               <div className="mb-4">
                 <label className="block text-gray-700 mb-2">Período para calcular:</label>
                 <div className="flex items-center">
+                  <label htmlFor="calculatorDays" className="sr-only">Número de dias</label>
                   <input 
+                    id="calculatorDays"
                     type="number" 
                     value={calculatorDays}
                     onChange={(e) => setCalculatorDays(Number(e.target.value))}
                     className="border border-gray-300 rounded px-3 py-2 w-20 mr-2"
                     min="1"
+                    placeholder="Dias"
                   />
                   <span>dias</span>
                 </div>

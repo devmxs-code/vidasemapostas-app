@@ -1,46 +1,63 @@
-# Getting Started with Create React App
+# **Vida Sem Apostas - Aplicativo de Conscientização sobre Jogos de Azar**
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 📌 **Visão Geral**
+O **Vida Sem Apostas** é um aplicativo web desenvolvido em React.js com o objetivo de conscientizar sobre os riscos do vício em jogos de azar e oferecer suporte para quem deseja se recuperar. Com uma abordagem humanizada e baseada em dados reais, o app fornece:
 
-## Available Scripts
+- ✅ Informações sobre os perigos dos jogos de azar online  
+- ✅ Histórias inspiradoras de superação  
+- ✅ Recursos de ajuda profissional e grupos de apoio  
+- ✅ Ferramentas para acompanhar o progresso na recuperação  
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## ✨ **Funcionalidades Principais**
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### 📚 **Informações Educativas**
+- Sinais de alerta para identificar o vício  
+- Impactos financeiros e emocionais das apostas  
+- Dicas de prevenção e estratégias de recuperação  
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### 🆘 **Recursos de Apoio**
+- Lista de contatos para ajuda imediata (CVV, Jogadores Anônimos, CAPS)  
+- Guia passo a passo para buscar tratamento  
+- Mensagens motivacionais rotativas  
 
-### `npm test`
+### 📈 **Acompanhamento de Progresso**
+- Contador de dias sem apostar  
+- Calculadora de dinheiro economizado  
+- Diário pessoal para registrar sentimentos e conquistas  
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 📖 **Histórias Reais**
+- Depoimentos inspiradores de pessoas que superaram o vício  
+- Carrossel interativo de casos  
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🚀 **Como Executar o Projeto**
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### **Pré-requisitos**
+- Node.js (v16 ou superior)  
+- npm ou yarn  
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### **Passos para Instalação**
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/devmxs-code/vidasemapostas-app.git
+   ```
+2. Instale as dependências:
+   ```bash
+   npm install
+   ```
+3. Inicie o servidor de desenvolvimento:
+   ```bash
+   npm start
+   ```
+4. Acesse no navegador:
+   ```
+   http://localhost:5173
+   ```
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 📜 **Licença**
+Este projeto está sob a licença **MIT**. Consulte o arquivo [LICENSE](LICENSE) para mais detalhes.

@@ -242,7 +242,7 @@ const GamblingAwarenessApp = () => {
   };
 
   const Header = () => (
-    <header className="bg-gradient-to-r from-blue-600 to-blue-800 text-white shadow-lg fixed top-0 w-full z-50">
+    <header className="bg-gradient-to-r from-primary-700 to-secondary-700 text-white shadow-lg fixed top-0 w-full z-50">
       <div className="max-w-7xl mx-auto px-4 py-3">
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-2 cursor-pointer" onClick={() => setCurrentPage('home')}>
@@ -253,35 +253,35 @@ const GamblingAwarenessApp = () => {
           <nav className="hidden md:flex space-x-2">
             <button 
               onClick={() => setCurrentPage('home')} 
-              className={`flex items-center space-x-2 px-4 py-2 rounded-lg transition-all ${currentPage === 'home' ? 'bg-blue-700 shadow-inner' : 'hover:bg-blue-500 hover:shadow-md'}`}
+              className={`flex items-center space-x-2 px-4 py-2 rounded-lg transition-all ${currentPage === 'home' ? 'bg-primary-800 shadow-inner' : 'hover:bg-primary-600 hover:shadow-md'}`}
             >
               <Home className="w-5 h-5" />
               <span>Início</span>
             </button>
             <button 
               onClick={() => setCurrentPage('info')} 
-              className={`flex items-center space-x-2 px-4 py-2 rounded-lg transition-all ${currentPage === 'info' ? 'bg-blue-700 shadow-inner' : 'hover:bg-blue-500 hover:shadow-md'}`}
+              className={`flex items-center space-x-2 px-4 py-2 rounded-lg transition-all ${currentPage === 'info' ? 'bg-primary-800 shadow-inner' : 'hover:bg-primary-600 hover:shadow-md'}`}
             >
               <Info className="w-5 h-5" />
               <span>Informações</span>
             </button>
             <button 
               onClick={() => setCurrentPage('support')} 
-              className={`flex items-center space-x-2 px-4 py-2 rounded-lg transition-all ${currentPage === 'support' ? 'bg-blue-700 shadow-inner' : 'hover:bg-blue-500 hover:shadow-md'}`}
+              className={`flex items-center space-x-2 px-4 py-2 rounded-lg transition-all ${currentPage === 'support' ? 'bg-primary-800 shadow-inner' : 'hover:bg-primary-600 hover:shadow-md'}`}
             >
               <HelpCircle className="w-5 h-5" />
               <span>Apoio</span>
             </button>
             <button 
               onClick={() => setCurrentPage('stories')} 
-              className={`flex items-center space-x-2 px-4 py-2 rounded-lg transition-all ${currentPage === 'stories' ? 'bg-blue-700 shadow-inner' : 'hover:bg-blue-500 hover:shadow-md'}`}
+              className={`flex items-center space-x-2 px-4 py-2 rounded-lg transition-all ${currentPage === 'stories' ? 'bg-primary-800 shadow-inner' : 'hover:bg-primary-600 hover:shadow-md'}`}
             >
               <MessageCircle className="w-5 h-5" />
               <span>Histórias</span>
             </button>
             <button 
               onClick={() => setCurrentPage('tracker')} 
-              className={`flex items-center space-x-2 px-4 py-2 rounded-lg transition-all ${currentPage === 'tracker' ? 'bg-blue-700 shadow-inner' : 'hover:bg-blue-500 hover:shadow-md'}`}
+              className={`flex items-center space-x-2 px-4 py-2 rounded-lg transition-all ${currentPage === 'tracker' ? 'bg-primary-800 shadow-inner' : 'hover:bg-primary-600 hover:shadow-md'}`}
             >
               <Calendar className="w-5 h-5" />
               <span>Meu Progresso</span>
@@ -294,7 +294,7 @@ const GamblingAwarenessApp = () => {
               id="page-select"
               value={currentPage} 
               onChange={(e) => setCurrentPage(e.target.value)}
-              className="bg-blue-700 text-white px-3 py-2 rounded-lg shadow-md"
+              className="bg-primary-800 text-white px-3 py-2 rounded-lg shadow-md"
             >
               <option value="home">Início</option>
               <option value="info">Informações</option>
@@ -309,40 +309,40 @@ const GamblingAwarenessApp = () => {
   );
 
   const Footer = () => (
-    <footer className="bg-gradient-to-b from-gray-800 to-gray-900 text-white py-8 mt-12">
+    <footer className="bg-gradient-to-b from-primary-900 to-secondary-900 text-white py-8 mt-12">
       <div className="max-w-7xl mx-auto px-4">
         <div className="text-center mb-6">
           <p className="text-lg font-semibold mb-4">⚠️ Este site é apenas informativo. Procure ajuda profissional se sentir necessidade.</p>
         </div>
         
         <div className="grid md:grid-cols-3 gap-8">
-          <div className="text-center p-4 bg-gray-700 rounded-lg">
-            <h3 className="font-bold text-red-400 mb-2 flex items-center justify-center"><AlertTriangle className="mr-2" /> Apoio Emocional</h3>
+          <div className="text-center p-4 bg-primary-800 rounded-lg">
+            <h3 className="font-bold text-danger-400 mb-2 flex items-center justify-center"><AlertTriangle className="mr-2" /> Apoio Emocional</h3>
             <p><strong>CVV – Centro de Valorização da Vida</strong></p>
             <p className="flex items-center justify-center"><Phone className="mr-2" /> 188 (24h, gratuito)</p>
             <p className="flex items-center justify-center"><BookOpen className="mr-2" /> cvv.org.br</p>
           </div>
           
-          <div className="text-center p-4 bg-gray-700 rounded-lg">
-            <h3 className="font-bold text-green-400 mb-2 flex items-center justify-center"><Shield className="mr-2" /> Vício em Jogos</h3>
+          <div className="text-center p-4 bg-primary-800 rounded-lg">
+            <h3 className="font-bold text-success-400 mb-2 flex items-center justify-center"><Shield className="mr-2" /> Vício em Jogos</h3>
             <p><strong>Jogadores Anônimos Brasil</strong></p>
             <p className="flex items-center justify-center"><Phone className="mr-2" /> (11) 96384-0438</p>
             <p className="flex items-center justify-center"><BookOpen className="mr-2" /> jogadoresanonimos.org.br</p>
           </div>
           
-          <div className="text-center p-4 bg-gray-700 rounded-lg">
-            <h3 className="font-bold text-blue-400 mb-2 flex items-center justify-center"><Heart className="mr-2" /> SUS - Ajuda Gratuita</h3>
+          <div className="text-center p-4 bg-primary-800 rounded-lg">
+            <h3 className="font-bold text-accent-400 mb-2 flex items-center justify-center"><Heart className="mr-2" /> SUS - Ajuda Gratuita</h3>
             <p><strong>CAPS & UBS</strong></p>
             <p className="flex items-center justify-center"><Info className="mr-2" /> Procure o mais próximo</p>
             <p className="flex items-center justify-center"><Users className="mr-2" /> Atendimento psicológico gratuito</p>
           </div>
         </div>
 
-        <div className="mt-8 text-center text-sm text-gray-400">
+        <div className="mt-8 text-center text-sm text-gray-300">
           <p>© {new Date().getFullYear()} Vida Sem Apostas - Todos os direitos reservados</p>
           <p className="mt-2">Este é um projeto sem fins lucrativos para conscientização sobre os riscos do vício em jogos de azar</p>
-           <p className="text-gray-600 text-sm mt-2 text-center w-full">
-            Desenvolvido por <a href="https://devmxs.com.br" className="hover:text-blue-700 font-semibold transition">DEVMXS</a>
+           <p className="text-gray-300 text-sm mt-2 text-center w-full">
+            Desenvolvido por <a href="https://devmxs.com.br" className="hover:text-accent-400 font-semibold transition">DEVMXS</a>
           </p>
         </div>
       </div>
@@ -370,7 +370,7 @@ const GamblingAwarenessApp = () => {
           <div className="flex justify-end">
             <button 
               onClick={closeModal}
-              className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition-colors"
+              className="bg-primary-600 hover:bg-primary-700 text-white px-4 py-2 rounded-lg transition-colors"
             >
               Fechar
             </button>
@@ -384,45 +384,45 @@ const GamblingAwarenessApp = () => {
     <div className="max-w-6xl mx-auto px-4">
       <div className="text-center mb-12 pt-8">
         <h2 className="text-4xl md:text-6xl font-bold text-gray-800 mb-6">
-          <span className="bg-clip-text text-transparent bg-gradient-to-r from-red-600 to-blue-600">
+          <span className="bg-clip-text text-transparent bg-gradient-to-r from-primary-600 to-secondary-800">
             🚨 PARE AGORA! 🚨
           </span>
         </h2>
-        <h3 className="text-2xl md:text-3xl text-red-600 font-bold mb-4">
+        <h3 className="text-2xl md:text-3xl text-primary-600 font-bold mb-4">
           Os Jogos de Azar Online Podem Destruir Sua Vida
         </h3>
         <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
           Jogos como o "Jogo do Tigrinho", roleta online e slots virtuais são programados para te fazer perder dinheiro. 
-          <strong className="text-red-600"> Eles não são investimentos</strong> - são armadilhas financeiras que podem levar ao vício, 
+          <strong className="text-primary-600"> Eles não são investimentos</strong> - são armadilhas financeiras que podem levar ao vício, 
           endividamento e destruição familiar.
         </p>
       </div>
 
       <div className="grid md:grid-cols-2 gap-8 mb-12">
-        <div className="bg-gradient-to-br from-red-50 to-red-100 border-l-4 border-red-500 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+        <div className="bg-gradient-to-br from-primary-50 to-primary-100 border-l-4 border-primary-500 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
           <div className="flex items-center mb-4">
-            <AlertTriangle className="w-8 h-8 text-red-500 mr-3" />
-            <h3 className="text-xl font-bold text-red-700">Sinais de Alerta</h3>
+            <AlertTriangle className="w-8 h-8 text-primary-500 mr-3" />
+            <h3 className="text-xl font-bold text-primary-700">Sinais de Alerta</h3>
           </div>
           <ul className="text-gray-700 space-y-2">
             <li className="flex items-start">
-              <span className="text-red-500 mr-2">•</span>
+              <span className="text-primary-500 mr-2">•</span>
               Pensando em jogos constantemente
             </li>
             <li className="flex items-start">
-              <span className="text-red-500 mr-2">•</span>
+              <span className="text-primary-500 mr-2">•</span>
               Mentindo sobre gastos
             </li>
             <li className="flex items-start">
-              <span className="text-red-500 mr-2">•</span>
+              <span className="text-primary-500 mr-2">•</span>
               Tentando "recuperar" perdas
             </li>
             <li className="flex items-start">
-              <span className="text-red-500 mr-2">•</span>
+              <span className="text-primary-500 mr-2">•</span>
               Negligenciando responsabilidades
             </li>
             <li className="flex items-start">
-              <span className="text-red-500 mr-2">•</span>
+              <span className="text-primary-500 mr-2">•</span>
               Sentindo ansiedade ou depressão
             </li>
           </ul>
@@ -443,36 +443,36 @@ const GamblingAwarenessApp = () => {
                 </div>
               )
             })}
-            className="mt-4 text-red-600 hover:text-red-800 text-sm font-semibold transition-colors"
+            className="mt-4 text-primary-600 hover:text-primary-800 text-sm font-semibold transition-colors"
           >
             Ver todos os sinais →
           </button>
         </div>
 
-        <div className="bg-gradient-to-br from-green-50 to-green-100 border-l-4 border-green-500 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+        <div className="bg-gradient-to-br from-secondary-50 to-secondary-100 border-l-4 border-accent-500 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
           <div className="flex items-center mb-4">
-            <Heart className="w-8 h-8 text-green-500 mr-3" />
-            <h3 className="text-xl font-bold text-green-700">Você Pode Se Recuperar</h3>
+            <Heart className="w-8 h-8 text-accent-500 mr-3" />
+            <h3 className="text-xl font-bold text-secondary-700">Você Pode Se Recuperar</h3>
           </div>
           <ul className="text-gray-700 space-y-2">
             <li className="flex items-start">
-              <span className="text-green-500 mr-2">•</span>
+              <span className="text-accent-500 mr-2">•</span>
               Admitir o problema é o primeiro passo
             </li>
             <li className="flex items-start">
-              <span className="text-green-500 mr-2">•</span>
+              <span className="text-accent-500 mr-2">•</span>
               Existem grupos de apoio gratuitos
             </li>
             <li className="flex items-start">
-              <span className="text-green-500 mr-2">•</span>
+              <span className="text-accent-500 mr-2">•</span>
               Tratamento psicológico pelo SUS
             </li>
             <li className="flex items-start">
-              <span className="text-green-500 mr-2">•</span>
+              <span className="text-accent-500 mr-2">•</span>
               Milhares se recuperaram
             </li>
             <li className="flex items-start">
-              <span className="text-green-500 mr-2">•</span>
+              <span className="text-accent-500 mr-2">•</span>
               Sua família quer te ajudar
             </li>
           </ul>
@@ -493,14 +493,14 @@ const GamblingAwarenessApp = () => {
                 </div>
               )
             })}
-            className="mt-4 text-green-600 hover:text-green-800 text-sm font-semibold transition-colors"
+            className="mt-4 text-accent-600 hover:text-accent-800 text-sm font-semibold transition-colors"
           >
             Como começar a recuperação →
           </button>
         </div>
       </div>
 
-      <div className="bg-gradient-to-r from-blue-600 to-purple-600 text-white p-8 rounded-xl shadow-lg mb-12">
+      <div className="bg-gradient-to-r from-primary-700 to-secondary-900 text-white p-8 rounded-xl shadow-lg mb-12">
         <div className="text-center">
           <h3 className="text-2xl font-bold mb-4">💡 Dica Motivacional</h3>
           <p className="text-xl italic mb-4">"{motivationalTips[currentTip]}"</p>
@@ -533,13 +533,13 @@ const GamblingAwarenessApp = () => {
               )
             })}
           >
-            <div className="text-blue-600 mb-2 flex justify-center">
-              <div className="p-2 bg-blue-100 rounded-full">
+            <div className="text-primary-600 mb-2 flex justify-center">
+              <div className="p-2 bg-primary-100 rounded-full">
                 {stat.icon}
               </div>
             </div>
             <h4 className="font-bold text-gray-800">{stat.title}</h4>
-            <p className="text-2xl font-bold text-blue-600">{stat.value}</p>
+            <p className="text-2xl font-bold text-primary-600">{stat.value}</p>
           </div>
         ))}
       </div>
@@ -547,21 +547,21 @@ const GamblingAwarenessApp = () => {
       <div className="flex flex-wrap justify-center gap-4 mb-12">
         <button 
           onClick={() => setCurrentPage('info')}
-          className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg font-semibold transition-all hover:shadow-lg flex items-center space-x-2"
+          className="bg-primary-600 hover:bg-primary-700 text-white px-8 py-4 rounded-lg font-semibold transition-all hover:shadow-lg flex items-center space-x-2"
         >
           <Info className="w-5 h-5" />
           <span>Entenda os Riscos</span>
         </button>
         <button 
           onClick={() => setCurrentPage('support')}
-          className="bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded-lg font-semibold transition-all hover:shadow-lg flex items-center space-x-2"
+          className="bg-gray-700 hover:bg-gray-800 text-white px-8 py-4 rounded-lg font-semibold transition-all hover:shadow-lg flex items-center space-x-2"
         >
           <Phone className="w-5 h-5" />
           <span>Buscar Ajuda Agora</span>
         </button>
         <button 
           onClick={() => setCurrentPage('stories')}
-          className="bg-purple-600 hover:bg-purple-700 text-white px-8 py-4 rounded-lg font-semibold transition-all hover:shadow-lg flex items-center space-x-2"
+          className="bg-blue-800 hover:bg-blue-900 text-white px-8 py-4 rounded-lg font-semibold transition-all hover:shadow-lg flex items-center space-x-2"
         >
           <Users className="w-5 h-5" />
           <span>Histórias Reais</span>
@@ -578,63 +578,63 @@ const GamblingAwarenessApp = () => {
 
       <div className="space-y-8">
         <div className="bg-white rounded-xl shadow-md p-6">
-          <h3 className="text-2xl font-bold text-red-600 mb-4 flex items-center">
+          <h3 className="text-2xl font-bold text-primary-600 mb-4 flex items-center">
             <AlertTriangle className="w-6 h-6 mr-2" />
             Como Identificar Sinais de Vício
           </h3>
           <div className="grid md:grid-cols-2 gap-8">
             <div>
               <h4 className="font-semibold text-gray-800 mb-3 flex items-center">
-                <Frown className="w-5 h-5 mr-2 text-red-500" />
+                <Frown className="w-5 h-5 mr-2 text-primary-500" />
                 Sinais Comportamentais:
               </h4>
               <ul className="text-gray-600 space-y-3">
                 <li className="flex items-start">
-                  <span className="text-red-500 mr-2">•</span>
+                  <span className="text-primary-500 mr-2">•</span>
                   Jogar por períodos cada vez mais longos
                 </li>
                 <li className="flex items-start">
-                  <span className="text-red-500 mr-2">•</span>
+                  <span className="text-primary-500 mr-2">•</span>
                   Mentir sobre tempo e dinheiro gastos
                 </li>
                 <li className="flex items-start">
-                  <span className="text-red-500 mr-2">•</span>
+                  <span className="text-primary-500 mr-2">•</span>
                   Tentar "recuperar" dinheiro perdido
                 </li>
                 <li className="flex items-start">
-                  <span className="text-red-500 mr-2">•</span>
+                  <span className="text-primary-500 mr-2">•</span>
                   Negligenciar trabalho, estudo ou família
                 </li>
                 <li className="flex items-start">
-                  <span className="text-red-500 mr-2">•</span>
+                  <span className="text-primary-500 mr-2">•</span>
                   Irritabilidade quando não pode jogar
                 </li>
               </ul>
             </div>
             <div>
               <h4 className="font-semibold text-gray-800 mb-3 flex items-center">
-                <TrendingDown className="w-5 h-5 mr-2 text-red-500" />
+                <TrendingDown className="w-5 h-5 mr-2 text-primary-500" />
                 Sinais Emocionais:
               </h4>
               <ul className="text-gray-600 space-y-3">
                 <li className="flex items-start">
-                  <span className="text-red-500 mr-2">•</span>
+                  <span className="text-primary-500 mr-2">•</span>
                   Ansiedade e depressão
                 </li>
                 <li className="flex items-start">
-                  <span className="text-red-500 mr-2">•</span>
+                  <span className="text-primary-500 mr-2">•</span>
                   Sentimentos de culpa e vergonha
                 </li>
                 <li className="flex items-start">
-                  <span className="text-red-500 mr-2">•</span>
+                  <span className="text-primary-500 mr-2">•</span>
                   Mudanças bruscas de humor
                 </li>
                 <li className="flex items-start">
-                  <span className="text-red-500 mr-2">•</span>
+                  <span className="text-primary-500 mr-2">•</span>
                   Isolamento social
                 </li>
                 <li className="flex items-start">
-                  <span className="text-red-500 mr-2">•</span>
+                  <span className="text-primary-500 mr-2">•</span>
                   Pensamentos sobre dinheiro constantemente
                 </li>
               </ul>
@@ -643,7 +643,7 @@ const GamblingAwarenessApp = () => {
         </div>
 
         <div className="bg-white rounded-xl shadow-md p-6">
-          <h3 className="text-2xl font-bold text-orange-600 mb-4 flex items-center">
+          <h3 className="text-2xl font-bold text-secondary-600 mb-4 flex items-center">
             <DollarSign className="w-6 h-6 mr-2" />
             Impactos Financeiros
           </h3>
